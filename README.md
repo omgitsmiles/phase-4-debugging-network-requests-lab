@@ -64,10 +64,23 @@ developing your own process.
 
   - How I debugged:
 
+  500 error
+
+  NameError: uninitialized constant
+
+  in create action toy = Toy(s).create instead of Toy
+
 - Update the number of likes for a toy
 
   - How I debugged:
 
+  #<NoMethodError: undefined method `update' for nil:NilClass>
+
+  added render json: toy
+
+
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+
+  - added route :destroy to resource
